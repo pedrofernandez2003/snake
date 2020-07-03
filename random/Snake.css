@@ -11,6 +11,7 @@ body{
 #matriz{
 	text-align: center;
 	margin-top: 50px;
+	display: inline-block;
 }
 #boton-reiniciar{
 	width: 6%;
@@ -21,4 +22,19 @@ body{
 	margin-left: 47%;
 	margin-top: 50px;
 	display: none;
+}
+#info{
+	background-color: #004BFA;
+	height: auto;
+	width: 20%;
+	margin-top: 50px;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#info > div{
+	display: inline-block;
+	height: 100px;
+	width:	100%;
+	text-decoration-color: #004BFA;
 }

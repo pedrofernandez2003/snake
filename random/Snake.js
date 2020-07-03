@@ -6,7 +6,7 @@ function Crear_Juego(){
 	var vivora = [[8,9],[8,8],[8,7]];
 	var prox_direccion = "derecha";
 	var posicion_manzana;
-	const speed = 100;
+	const speed = 10;
 	//document.addEventListener('keydown', DetectarMovimiento);
 
 	var matrizHTML = "";
@@ -120,9 +120,9 @@ function Crear_Juego(){
 			clearInterval(Actualizar_Movimiento);
 			clearInterval(Chequear_Derrota);
 			$("#boton-reiniciar").css('display','block');*/
-			vivora = rebotar(vivora);
+			vivora = rebotarRandom(vivora);
 		}
-		for (var i = 1; i < vivora.length; i++) {
+		/*for (var i = 1; i < vivora.length; i++) {
 			if(vivora[0][0] == vivora[i][0] && vivora[0][1] == vivora[i][1]){
 				clearInterval(Actualizar_Pantalla);
 				clearInterval(Actualizar_Movimiento);
@@ -130,7 +130,7 @@ function Crear_Juego(){
 				clearInterval(Chequear_Victoria);
 				$("#boton-reiniciar").css('display','block');
 			}
-		}
+		}*/
 	}
 
 	function Victoria(){
@@ -139,7 +139,7 @@ function Crear_Juego(){
 			clearInterval(Actualizar_Movimiento);
 			clearInterval(Chequear_Derrota);
 			clearInterval(Chequear_Victoria);
-			document.getElementById("texto").innerHTML  = "NANANA estas de ruta GG";
+			$("#boton-reiniciar").css('display','block');
 		}
 		
 	}
@@ -152,5 +152,3 @@ function Crear_Juego(){
 
 
 }
-
-
