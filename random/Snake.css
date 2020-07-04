@@ -11,7 +11,7 @@ body{
 #matriz{
 	text-align: center;
 	margin-top: 50px;
-	display: inline-block;
+	text-align:center;
 }
 #boton-reiniciar{
 	width: 6%;
@@ -24,17 +24,26 @@ body{
 	display: none;
 }
 #info{
-	background-color: #004BFA;
-	height: auto;
-	width: 20%;
-	margin-top: 50px;
+	height: 150px;
+	width: 25%;
+	margin-top: 130px;
 	display: inline-block;
 	margin-left: 5%;
 	margin-right: 5%;
+	position: absolute;
 }
 #info > div{
 	display: inline-block;
-	height: 100px;
+	height: 25%;
 	width:	100%;
-	text-decoration-color: #004BFA;
+	text-align: left;
+	font-family: verdana;
+	font-size: 25px;
+}
+#tiempo-transcurrido{
+	width: 35% !important;
+}
+#crono{
+	width: 50% !important;
+	position: absolute;
 }

@@ -1,12 +1,9 @@
 function Crear_Juego(){
-
-	var alturaTablero = 17;
-	var anchoTablero = 17;
 	
 	var vivora = [[8,9],[8,8],[8,7]];
 	var prox_direccion = "derecha";
 	var posicion_manzana;
-	const speed = 10;
+	const speed = 100;
 	//document.addEventListener('keydown', DetectarMovimiento);
 
 	var matrizHTML = "";
@@ -76,10 +73,11 @@ function Crear_Juego(){
 					colisionan = false;
 				}	
 				else{
-					colisionan = true;
+					colisionan = true;	
 				}
 			}
 		}	
+		
 	}
 
 	/*function DetectarMovimiento(evento){
@@ -111,7 +109,12 @@ function Crear_Juego(){
 			Generar_Manzana();
 		}
 		obtenerDataSerpiente(vivora);//mando la data al js de la ia
-		
+		//mostrar data:
+		document.getElementById('cant-manzanas').innerHTML='Manzanas comidas: '+ (vivora.length - 3);
+		document.getElementById('tiempo-transcurrido').innerHTML='Tiempo: ';
+		document.getElementById('largo-valor').innerHTML='Largo: ' + vivora.length + ' unidades';
+		var porc = (100*vivora.length)/289 ;
+		document.getElementById('largo-porc').innerHTML='Largo: ' + porc.toFixed(2) +'%';
 	}
 
 	function Derrota(){

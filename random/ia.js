@@ -1,33 +1,36 @@
 var posFruta;
 var posSerpiente;
-var direccion;
 
 function obtenerDataFruta(fruta) {
 	posFruta = fruta;
 }
-function obtenerDataSerpiente(vivora, direc) {
+function obtenerDataSerpiente(vivora) {
 	posSerpiente = vivora;
-	direccion = direc;
+	console.log(posSerpiente[0]);
 }
 function eleccionRandom(posActual) {
 	if (posActual == "arriba") {
 		var direcciones = ["arriba","derecha","izquierda"];
-		var ran = Math.floor(Math.random() * 3)
+		var ran = Math.floor(Math.random() * 3);
+		console.log(direcciones[ran]);
 		return direcciones[ran];
 	}
 	else if(posActual == "derecha"){
 		var direcciones = ["arriba","derecha","abajo"];
 		var ran = Math.floor(Math.random() * 3)
+		console.log(direcciones[ran]);
 		return direcciones[ran];
 	}
 	else if(posActual == "izquierda"){
 		var direcciones = ["arriba","abajo","izquierda"];
-		var ran = Math.floor(Math.random() * 3)
+		var ran = Math.floor(Math.random() * 3);
+		console.log(direcciones[ran]);
 		return direcciones[ran];
 	}
 	else{
 		var direcciones = ["abajo","derecha","izquierda"];
-		var ran = Math.floor(Math.random() * 3)
+		var ran = Math.floor(Math.random() * 3);
+		console.log(direcciones[ran]);
 		return direcciones[ran];
 	}	
 }
