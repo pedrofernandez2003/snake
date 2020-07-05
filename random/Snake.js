@@ -3,7 +3,7 @@ function Crear_Juego(){
 	var vivora = [[8,9],[8,8],[8,7]];
 	var prox_direccion = "derecha";
 	var posicion_manzana;
-	const speed = 100;
+	const speed = 1;
 	//document.addEventListener('keydown', DetectarMovimiento);
 
 	var matrizHTML = "";
