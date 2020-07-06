@@ -8,3 +8,30 @@ body{
 	margin-left: 30%;
 	margin-top: 100px;
 }
+#parte-balas{
+	background-color: none;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	float: right;
+}
+.camino-bala{
+	height: 5%;
+	width: 100%;
+	background-color: none; 
+}
+.bala{
+	height: 50%;
+	width: 5%;
+	background-color: black;
+	margin-top: 5px;
+	float: right;
+	/*margin-right: 0; esto lo cambiara el js para representar el movimiento, pero no a la clase, al id de cada bala (por si hay mas de una bala a la vez)*/
+}
+#jugador{
+	width: 5%;
+	height: 100%;
+	background-color: green;
+	display: inline-block;
+	margin-left: 5%;
+}
