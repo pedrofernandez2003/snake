@@ -28,10 +28,10 @@ body{
 	float: right;
 	/*margin-right: 0; esto lo cambiara el js para representar el movimiento, pero no a la clase, al id de cada bala (por si hay mas de una bala a la vez)*/
 }
-#jugador{
+.jugador{
 	width: 5%;
 	height: 100%;
 	background-color: green;
-	display: inline-block;
+	display: none;
 	margin-left: 5%;
 }
